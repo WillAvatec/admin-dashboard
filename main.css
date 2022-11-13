@@ -4,7 +4,8 @@
 }
 
 :root{
-    --design-color: rgb(37, 167, 211); 
+    --strong-color: #65a30d;
+    --light-color: #ecfccb;
 }
 
 .container {
@@ -15,7 +16,7 @@
 
 .sidebar {
     grid-area: 1/1/4/2;
-    background-color: var(--design-color);
+    background-color: var(--strong-color);
     color: white;
     font-size: 3rem;
     font-family: 'Barlow Condensed', sans-serif;
@@ -23,8 +24,14 @@
     text-shadow: 0 0 2px black;
 }
 
+.logo {
+    margin: 10px;
+
+}
+
 .options {
     text-align: start;
+    margin-left: calc(3vw - 10px);
 }
 
 .options > ul > li > a {
@@ -32,7 +39,10 @@
     text-align: left;
     text-decoration: none;
     font-size: 2rem;
-    font-weight: 500;
+}
+
+#support {
+    margin-top: 15vh;
 }
 
 .header, .main-content{
@@ -48,20 +58,25 @@
     margin-bottom: 3px;
 }
 
+.left {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
 .search {
     display: flex;
     justify-content: space-around;
     gap: 50px;
-    margin-top: 20px;
 }
 
 #search {
     width: 40vw;
     height: 1.6rem;
-    background-color: #eaeff1;
+    background-color: var(--light-color);
     border-radius: 10px;
     border-style: none;
-    border: 1px solid #f9f9f9;
+    border: 1px solid #d9f99d;
     align-self: center;
 }
 
@@ -71,19 +86,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .right > img {
     width: 45px;
     height: auto;
-    margin-right: 17px;
+    margin-left: 27px;
 }
 
 .greetings {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px 40px 15px;
+    margin: 0px 40px 0px;
 }
 
 .greet {
@@ -135,7 +152,8 @@
 .card {
     height: 200px;
     background-color: white;
-    border-left: 8px solid rgba(218, 165, 32, 0.8);
+    border-left: 9px solid #eab308;
+/*     border-left: 8px solid rgba(218, 165, 32, 0.8); */
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
@@ -195,6 +213,7 @@
 
 .tweet > img {
     width: 45px;
+    margin-right: 10px;
 }
 
 .tweet > div > p {
@@ -211,7 +230,7 @@ button {
     padding: 5px 14px;
     color: white;
     font-weight: 600;
-    background-color: var(--design-color);
+    background-color: var(--strong-color);
     border-radius: 12px;
     border-style: none;
     cursor: pointer;
