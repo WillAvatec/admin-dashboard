@@ -15,7 +15,7 @@
 }
 
 .sidebar-wrapper {
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
